@@ -88,6 +88,7 @@ const EditProduct = () => {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    placeholder="Name"
                   />
                   {/* show name error */}
                   {errors.name && (
@@ -99,6 +100,7 @@ const EditProduct = () => {
                 <td>Details</td>
                 <td>
                   <textarea
+                    placeholder="Description"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     rows={10}
@@ -117,6 +119,7 @@ const EditProduct = () => {
                     type="number"
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
+                    placeholder="Price"
                   />
                   {/* show price error */}
                   {errors.price && (
